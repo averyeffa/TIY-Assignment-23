@@ -6,11 +6,11 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 module.exports = {
   devtool : 'inline-source-map',
   entry:   { filename: './src/index.js' },
-  output : { filename: './js/app.js', path: `${__dirname}/dist/` },
+  output : { filename: './js/bundle.js', path: `${__dirname}/dist/` },
   context : `${__dirname}` ,
   module: {
     loaders: [
-		 { 
+		 {
           test: /\.js$/,
 			 exclude: /node_modules/,
 			 loader: 'babel-loader',
@@ -37,7 +37,7 @@ module.exports = {
 	  new CopyWebpackPlugin([
 	     {from : 'src/images', to: 'images'}
 	  ]),
-	 
+
      //env plugin -- css
   ]
 }

@@ -1,17 +1,30 @@
-@import "./part/some-part.scss";
 
-*{
-	box-sizing: border-box;
-}
-body{margin: 0;}
+*{ box-sizing: border-box }
 
-
-
-$txt-color: #fff;
-
-h1{
-	margin: 0 0 10px 0;
-	color: $txt-color;
-	border-bottom: 4px solid $txt-color;
+img {
+   width: 100%;
+   display: block;
 }
 
+#app-container{
+  font-size: 0;
+}
+
+.legislators-info{
+  font-size: 12px;
+  background-color: #D9F1C9;
+  width: 32.1%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 6px;
+  padding-left: 12px;
+  height: 220px;
+}
+
+.h3{
+  font-size: 12px;
+}
+
+.h4{
+  font-size: 10px;
+}
